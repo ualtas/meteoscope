@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Météo Transports en Commun</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-container">
+      <div class="header">
+        <span class="weather-icon-small">☁️</span>
+        <h2>Météo</h2>
+      </div>
+
+      <h1 id="city-name">Chargement de la ville...</h1>
+      <img id="weather-icon" src="" alt="Icône météo" style="display: none" />
+      <p id="temperature" class="main-temp">--°C</p>
+      <p id="description" class="weather-description">--</p>
+
+      <div class="details-grid">
+        <div class="detail-card">
+          <p>Ressenti</p>
+          <p id="feels-like">--°C</p>
+        </div>
+        <div class="detail-card">
+          <p>Humidité</p>
+          <p id="humidity">--%</p>
+        </div>
+        <div class="detail-card">
+          <p>Vent</p>
+          <p id="wind-speed">-- m/s</p>
+        </div>
+        <div class="detail-card">
+          <p>Pression</p>
+          <p id="pressure">-- hPa</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="meteo.js"></script>
+  </body>
+</html>
