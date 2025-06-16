@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const API_KEY = "94601585a670347e7fa135d1962e265e"; // <<<<< REMPLACEZ CECI PAR VOTRE VRAIE CLÉ API
+  const API_KEY = "94601585a670347e7fa135d1962e265e"; // <<<<< CECI EST MA CLÉ API DE OpenWeatherMap
   const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
   const cityNameElement = document.getElementById("city-name");
@@ -42,13 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("Données météo reçues :", weatherData); // Pour le débogage
 
       // 3. Afficher les données
-      const temperature = Math.round(weatherData.main.temp); // Yuvarla
+      const temperature = Math.round(weatherData.main.temp); // Rondir la température
       const description = weatherData.weather[0].description;
       const iconCode = weatherData.weather[0].icon;
       const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
-      const feelsLike = Math.round(weatherData.main.feels_like); // Yuvarla
+      const feelsLike = Math.round(weatherData.main.feels_like); // Rondir la température ressentie
       const humidity = weatherData.main.humidity;
-      const windSpeed = (weatherData.wind.speed * 3.6).toFixed(1); // m/s'den km/s'ye çevir ve 1 ondalık basamak
+      const windSpeed = (weatherData.wind.speed * 3.6).toFixed(1); // Convertir m/s en km/h et garder 1 décimale
       const pressure = weatherData.main.pressure;
 
       temperatureElement.textContent = `${temperature}°C`;
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       feelsLikeElement.textContent = `${feelsLike}°C`;
       humidityElement.textContent = `${humidity}%`;
-      windSpeedElement.textContent = `${windSpeed} km/h`; // km/h olarak göster
+      windSpeedElement.textContent = `${windSpeed} km/h`; // Affichage de la vitesse du vent en km/h
       pressureElement.textContent = `${pressure} hPa`;
     } catch (error) {
       console.error(
@@ -77,5 +77,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   getWeatherData();
-  setInterval(getWeatherData, 3600000);
+  setInterval(getWeatherData, 3600000); // Rafraîchir toutes les heures
 });

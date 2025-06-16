@@ -5,26 +5,26 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #3b82f6; /* Görsele benzer bir mavi tonu */
-  color: #fff; /* Metin rengini beyaz yapalım */
-  background-image: url(meteo.jpg); /* Arka plan resminin URL'si */
+  background-color: #3b82f6; /* Couleur d'arrière-plan, si l'image n'est pas chargée */
+  color: #fff; /* Couleur du texte */
+  background-image: url(assets/meteo.jpg); /* URL de l'image d'arrière-plan */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden; /* Scrollbar olmaması için */
+  overflow: hidden; /* Pas de barre de défilement */
 }
 
-/* Glassmorphism efekti için kapsayıcı */
+/* Conteneur principal pour les informations météo */
 .weather-container {
-  background: rgba(255, 255, 255, 0.15); /* Şeffaf beyaz */
-  backdrop-filter: blur(10px); /* Arka planı bulanıklaştırır */
-  -webkit-backdrop-filter: blur(10px); /* Safari desteği */
+  background: rgba(255, 255, 255, 0.15); /* Blanc transparent */
+  backdrop-filter: blur(10px); /* Flou d'arrière-plan */
+  -webkit-backdrop-filter: blur(10px); /* Support Safari */
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Hafif beyaz kenarlık */
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Hafif gölge */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Bordure blanche légère */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Ombre légère */
   padding: 30px;
   text-align: center;
-  width: 340px; /* Görsele benzer genişlik */
+  width: 340px; /* Largeur similaire à l'image */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +45,7 @@ body {
 }
 
 .weather-icon-small {
-  font-size: 2em; /* Küçük bulut ikonu boyutu */
+  font-size: 2em; /* Taille de l'icône de nuage petite */
   margin-right: 10px;
 }
 
@@ -63,7 +63,7 @@ h1#city-name {
 }
 
 p.main-temp {
-  font-size: 4em; /* Ana sıcaklık daha büyük */
+  font-size: 4em; /* Taille de la température principale */
   font-weight: 700;
   margin: 0;
   color: #fff;
@@ -75,13 +75,13 @@ p.weather-description {
   margin-top: 5px;
   margin-bottom: 30px;
   color: rgba(255, 255, 255, 0.8);
-  text-transform: capitalize; /* İlk harfi büyük yapar */
+  text-transform: capitalize; /* Première lettre en majuscule */
 }
 
 .details-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 sütunlu düzen */
-  gap: 15px; /* Kartlar arası boşluk */
+  grid-template-columns: repeat(2, 1fr); /* Mise en page à 2 colonnes */
+  gap: 15px; /* Espacement entre les cartes */
   width: 100%;
 }
 
@@ -91,7 +91,7 @@ p.weather-description {
     255,
     255,
     0.1
-  ); /* Detay kartları için daha koyu şeffaf */
+  ); /* Détails des cartes pour une transparence plus foncée */
   border-radius: 15px;
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
