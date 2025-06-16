@@ -1,17 +1,19 @@
-##Météoscop
+# Météoscop
 
-# ☁️ Affichage Météo pour Transports en Commun ☁️
+![l'image d'app](assets/app-meteoscop.png)
+
+# Affichage Météo pour Transports en Commun
 
 Ce projet a été développé dans le cadre de la préparation à la journée de sélection pour le parcours de formation "Concepteur Développeur d’Applications". L'objectif est de créer une interface web simple et lisible affichant la météo actuelle pour une ville donnée, destinée aux écrans d'information dans les transports en commun.
 
-## 🌟 Fonctionnalités
+## Fonctionnalités
 
 - **Affichage de la météo actuelle** : Température, description du ciel, icône météo, ressenti, humidité, vitesse du vent et pression.
 - **Configuration par fichier JSON** : Le nom de la ville est lu depuis un fichier `conf.json`, éliminant le besoin de saisie manuelle ou de moteur de recherche.
 - **Mise à jour automatique** : Les données météo sont rafraîchies toutes les heures.
 - **Design moderne et épuré** : L'interface utilise un effet de "glassmorphism" pour une meilleure intégration visuelle sur les écrans.
 
-## 🛠️ Technologies Utilisées
+## Technologies Utilisées
 
 - **HTML5** : Structure de l'interface.
 - **CSS3** : Stylisation et mise en page (incluant le "glassmorphism" et le responsive design de base).
@@ -19,14 +21,14 @@ Ce projet a été développé dans le cadre de la préparation à la journée de
 - **API OpenWeatherMap** : Source des données météo en temps réel.
 - **Git & GitHub** : Gestion de version et hébergement du projet.
 
-## 🚀 Démarrage Rapide
+## Démarrage Rapide
 
 Pour faire fonctionner ce projet en local :
 
 1.  **Clonez le dépôt :**
 
     ```bash
-    git clone [https://github.com/ualtas/meteoscope.git](https://github.com/ualtas/meteoscope.git)
+    git clone https://github.com/ualtas/meteoscope.git
     cd meteoscop
     ```
 
@@ -65,14 +67,6 @@ Pour faire fonctionner ce projet en local :
     - **Environnement de développement réaliste :** C'est ainsi que les applications web sont généralement servies en production, ce qui vous donne une meilleure idée de la façon dont elle se comportera.
     - **Simplicité :** Python est souvent préinstallé, et lancer ce serveur minimal est très rapide et facile.
       Assurez-vous que Python est bien installé sur le système où vous voulez faire tourner l'application.
-
-## 📁 Structure du Projet
-
-.
-├── index.html # Structure principale de l'interface
-├── style.css # Styles CSS et design de l'application
-├── conf.json # Fichier de configuration pour la ville
-└── meteo.js # Logique JavaScript : récupération et affichage des données
 
 ## 💡 Améliorations Possibles
 
