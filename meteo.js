@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const API_KEY = "94601585a670347e7fa135d1962e265e"; // <<<<< CECI EST MA CLÉ API DE OpenWeatherMap
+  const API_KEY = "VOTRE_CLE_API"; // <<<<< CECI EST MA CLÉ API DE OpenWeatherMap
   const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
   const cityNameElement = document.getElementById("city-name");
