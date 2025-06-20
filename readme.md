@@ -2,6 +2,8 @@
 
 ![l'image d'app](assets/app-meteoscop.png)
 
+[Voir en live !](https://meteoscope-cyberaltas.netlify.app/)
+
 # Affichage Météo pour Transports en Commun
 
 Ce projet a été développé dans le cadre de la préparation à la journée de sélection pour le parcours de formation "Concepteur Développeur d’Applications". L'objectif est de créer une interface web simple et lisible affichant la météo actuelle pour une ville donnée, destinée aux écrans d'information dans les transports en commun.
